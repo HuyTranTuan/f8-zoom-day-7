@@ -19,30 +19,75 @@
         <!-- Start Header -->
         <div class="header__wrapper">
             <div class="header__blur">
-                <div class="header__nav__wrapper">
-                    <div class="header__nav">
-                        <!-- Header Logo -->
-                        <a href="" class="header__logo">
-                            <img src="./img/logo.png" alt="Scholars" srcset="">
-                        </a>
+                <!-- <div class="header__nav__wrapper">
                     
-                        <!-- Header List Nav -->
-                        <ul class="nav__list">
-                            <li class="nav__item"><a href="">Home</a></li>
-                            <li class="nav__item"><a href="">Courses</a></li>
-                            <li class="nav__item"><a href="">Event</a></li>
-                            <li class="nav__item"><a href="">Pages</a></li>
-                            <li class="nav__item"><a href="">Portfolio</a></li>
-                            <li class="nav__item"><a href="">Blog</a></li>
-                            <li class="nav__item"><a href="">Shop</a></li>
-                            <li class="nav__item"><a href="">Contact</a></li>
-                        </ul>
-                    
-                        <!-- Header Action -->
-                        <div class="nav__action">
-                            <button class="action__btn"><i class="bi bi-search"></i></button>
-                            <button class="action__btn"><i class="bi bi-cart3"></i></button>
-                        </div>
+                </div> -->
+                <div class="header__nav">
+                    <!-- Header Logo -->
+                    <a href="" class="header__logo">
+                        <img src="./img/logo.png" alt="Scholars" srcset="">
+                    </a>
+                
+                    <!-- Header List Nav -->
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="">Home</a>
+                            <ul class="sub__menu">
+                                <li><a href=""><span>Home version one</span></a></li>
+                                <li><a href=""><span>Home version Two</span></a></li>
+                                <li><a href=""><span>Home video background</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="">Courses</a>
+                            <ul class="sub__menu">
+                                <li><a href=""><span>Course 2 Column</span></a></li>
+                                <li><a href=""><span>Course 3 Column</span></a></li>
+                                <li><a href=""><span>Course Details</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="">Event</a>
+                            <ul class="sub__menu">
+                                <li><a href=""><span>Event List</span></a></li>
+                                <li><a href=""><span>Event Grid</span></a></li>
+                                <li><a href=""><span>Event Single</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="">Pages</a>
+                            <ul class="sub__menu">
+                                <li><a href=""><span>Our teachers</span></a></li>
+                                <li><a href=""><span>teachers profile</span></a></li>
+                                <li><a href=""><span>About Us</span></a></li>
+                                <li><a href=""><span>Error page</span></a></li>
+                                <li><a href=""><span>FAQ Page</span></a></li>
+                                <li><a href=""><span>Login</span></a></li>
+                                <li><a href=""><span>Sign up</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="">Portfolio</a>
+                            <ul class="sub__menu">
+                                <li><a href=""><span>portfolio 2 column</span></a></li>
+                                <li><a href=""><span>portfolio 3 column</span></a></li>
+                                <li><a href=""><span>portfolio 4 column</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="">Blog</a>
+                            <ul class="sub__menu">
+                                <li><a href="blog.html"><span>Blog</span></a></li>
+                                <li><a href="blog-details.html"><span>Blog details</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="">Shop</a>
+                            <ul class="sub__menu">
+                                <li><a href="shop.html"><span>Shop Page</span></a></li>
+                                <li><a href="shop-single.html"><span>Shop Details</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="">Contact</a></li>
+                    </ul>
+                
+                    <!-- Header Action -->
+                    <div class="nav__action">
+                        <button class="action__btn"><i class="bi bi-search"></i></button>
+                        <button class="action__btn"><i class="bi bi-cart3"></i></button>
                     </div>
                 </div>
                 <div class="header__container">
@@ -58,6 +103,7 @@
 
         <!-- Start Body -->
         <div class="body__wrapper">
+            <!-- Left -->
             <div class="body__menu">
                 <form action="" class="body__filter">
                     <input type="search" spellcheck="false" autocomplete="off" placeholder="Search...">
@@ -65,6 +111,8 @@
                         <i class="bi bi-search"></i>
                     </button>
                 </form>
+
+                <!-- Topic -->
                 <div class="menu__topic">
                     <span class="topic__title">Topics</span>
                     <ul class="topic__list">
@@ -147,6 +195,8 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Right -->
             <div class="body__list">
                 <ul class="list__filter">
                     <li class="list__filter__item active"><a href="">New</a></li>
@@ -157,7 +207,10 @@
                 </ul>
                 <div class="list__courses">
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-1.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-1.jpg" alt="">
+                            <span></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to PHP language with Ajax & Redux</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -171,11 +224,14 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>575</span>
                             </div>
-                            <a href="" class="btn__free">FREE</a>
+                            <a href="" class="btn__free btn__item__link">FREE</a>
                         </div>
                     </div>
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-2.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-2.jpg" alt="">
+                            <span></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to DJango Ling with Remax options</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -189,11 +245,14 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>620</span>
                             </div>
-                            <a href="" class="btn__money">$39</a>
+                            <a href="" class="btn__money btn__item__link">$39</a>
                         </div>
                     </div>
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-3.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-3.jpg" alt="">
+                            <span><i class="bi bi-lightning-fill"></i></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to DJango Ling with Remax options</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -207,11 +266,14 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>1575</span>
                             </div>
-                            <a href="" class="btn__money">$39</a>
+                            <a href="" class="btn__money btn__item__link">$39</a>
                         </div>
                     </div>
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-1.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-1.jpg" alt="">
+                            <span></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to PHP language with Ajax & Redux</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -225,11 +287,14 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>575</span>
                             </div>
-                            <a href="" class="btn__free">FREE</a>
+                            <a href="" class="btn__free btn__item__link">FREE</a>
                         </div>
                     </div>
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-2.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-2.jpg" alt="">
+                            <span></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to DJango Ling with Remax options</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -243,11 +308,14 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>620</span>
                             </div>
-                            <a href="" class="btn__money">$39</a>
+                            <a href="" class="btn__money btn__item__link">$39</a>
                         </div>
                     </div>
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-3.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-3.jpg" alt="">
+                            <span><i class="bi bi-lightning-fill"></i></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to DJango Ling with Remax options</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -261,11 +329,14 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>1575</span>
                             </div>
-                            <a href="" class="btn__money">$39</a>
+                            <a href="" class="btn__money btn__item__link">$39</a>
                         </div>
                     </div>
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-1.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-1.jpg" alt="">
+                            <span></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to PHP language with Ajax & Redux</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -279,11 +350,14 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>575</span>
                             </div>
-                            <a href="" class="btn__free">FREE</a>
+                            <a href="" class="btn__free btn__item__link">FREE</a>
                         </div>
                     </div>
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-2.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-2.jpg" alt="">
+                            <span></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to DJango Ling with Remax options</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -297,11 +371,14 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>620</span>
                             </div>
-                            <a href="" class="btn__money">$39</a>
+                            <a href="" class="btn__money btn__item__link">$39</a>
                         </div>
                     </div>
                     <div class="course__item">
-                        <a href="" class="course__item__header"><img src="./img/course-3.jpg" alt=""></a>
+                        <a href="" class="course__item__header">
+                            <img src="./img/course-3.jpg" alt="">
+                            <span><i class="bi bi-lightning-fill"></i></span>
+                        </a>
                         <div class="course__item__body">
                             <h2><a href="">Introduction to DJango Ling with Remax options</a></h2>
                             <p>In this course, you will learn the of PHP Framework and Ajax. This course will build your foundation.</p>
@@ -315,9 +392,11 @@
                                 <i class="bi bi-person-fill"></i>
                                 <span>1575</span>
                             </div>
-                            <a href="" class="btn__money">$39</a>
+                            <a href="" class="btn__money btn__item__link">$39</a>
                         </div>
                     </div>
+
+
                 </div>
 
                 <ul class="pagination">
@@ -388,7 +467,7 @@
                     <p>Subscribe us to get all the latest news from us</p>
                     <form class="footer__item__form">
                         <input type="email" spellcheck="false" autocomplete="off" placeholder="Your Email" class="footer__item__input">
-                        <button type="submit">SEND</button>
+                        <button type="submit" class="footer__item__form__btn">SEND</button>
                     </form>
                 </div>
             </div>
