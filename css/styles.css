@@ -109,24 +109,29 @@ select {
 }
 
 .nav__item .sub__menu {
-  display: none;
+  /* display: none; */
   position: absolute;
   min-width: 25rem;
   background: #fff;
   color: #151515;
   font-size: 1.6rem;
   font-weight: normal;
-  top: 100%;
+  top: 95%;
   left: 0;
   z-index: 1;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+  transform: scale(0);
+  transform-origin: 0 5%;
+  transition: transform 0.2s ease-in-out;
 }
-.nav__item > a:hover ~ ul.sub__menu {
+.nav__item > a:hover ~ ul.sub__menu,
+.nav__item .sub__menu:hover {
   display: block;
   z-index: 100;
-}
-
-.nav__item .sub__menu li {
-  /* width: 100%; */
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .nav__item .sub__menu li a {
@@ -140,10 +145,6 @@ select {
   text-decoration: none;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.05);
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.nav__item:hover .sub__menu {
-  display: block;
 }
 
 .nav__item .sub__menu span {
