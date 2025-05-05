@@ -125,8 +125,8 @@ select {
   left: 0;
   z-index: 1;
   transform: scale(0);
-  transform-origin: 0 5%;
-  transition: transform 0.2s ease-in-out;
+  transform-origin: 0 2%;
+  transition: transform 0.4s ease-in-out;
 }
 .nav__item > a:hover ~ ul.sub__menu,
 .nav__item .sub__menu:hover {
@@ -291,7 +291,7 @@ select {
   padding: 0 2.5rem;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.05);
   text-decoration: none;
-  transition: color 0.1s ease-in, translate 0.1s ease;
+  transition: color 0.3s ease-in, translate 0.3s ease;
 }
 
 .topic__list__item:hover a {
@@ -377,9 +377,9 @@ select {
   color: rgb(255, 255, 255);
   background-color: #b80257;
   position: absolute;
-  top: -70px;
-  right: -80px;
-  transform: rotate(37deg);
+  top: -50px;
+  right: -65px;
+  transform: rotate(35deg);
   justify-content: center;
   align-items: flex-end;
   padding: 1rem;
@@ -429,6 +429,11 @@ select {
 .course__item__footer div i::before {
   width: 1.5rem;
   height: 1.5rem;
+}
+.bi-lightning-fill::before {
+  content: "\f46e";
+  display: block;
+  transform: rotate(-30deg);
 }
 
 .course__item__footer a.btn__item__link {
@@ -544,6 +549,10 @@ select {
 .footer__item li a {
   line-height: 3rem;
   text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+.footer__item li a:hover {
+  color: var(--secondary-color);
 }
 
 .footer__item__first,

@@ -253,7 +253,9 @@ select {
 
 .dropdown__container {
   position: absolute;
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
   background-color: var(--white);
   z-index: 1;
   border-radius: 1rem;
@@ -264,6 +266,7 @@ select {
   max-height: 50rem;
   width: max-content;
   box-sizing: border-box;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 .item__gt__3 {
@@ -316,6 +319,8 @@ select {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown__container::before {
@@ -547,6 +552,7 @@ h3 {
   color: var(--black);
   height: 4rem;
   transition: color 0.1s ease-in;
+  margin-top: 1.2rem;
 }
 
 .sale__list__item:hover .sale__title {
